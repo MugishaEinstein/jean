@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tutorials Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #5c6bc0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #3949ab;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            padding: 14px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #283593;
+            transition: 0.3s;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            text-decoration: none;
+            padding: 10px 30px;
+            background-color: #5c6bc0;
+            color: white;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .hero a:hover {
+            background-color: #3949ab;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .section {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .section h3 {
+            color: #3f51b5;
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .section p {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #5c6bc0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Online Tutorials</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h2>Master Web Development</h2>
+        <p>Join thousands of students and learn the latest web technologies with our interactive tutorials.</p>
+        <a href="#">Get Started</a>
+    </div>
+
+    <div class="container">
+        <div class="sections">
+            <div class="section">
+                <img src="https://via.placeholder.com/300x200" alt="HTML and CSS">
+                <h3>HTML & CSS</h3>
+                <p>Learn the building blocks of the web. Create beautiful websites with structured HTML and CSS styling.</p>
+            </div>
+
+            <div class="section">
+                <img src="https://via.placeholder.com/300x200" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Add interactivity to your websites with JavaScript. Explore the power of modern web development.</p>
+            </div>
+
+            <div class="section">
+                <img src="https://via.placeholder.com/300x200" alt="Python">
+                <h3>Python Programming</h3>
+                <p>Dive into Python, one of the most popular programming languages. Perfect for web development, data analysis, and more.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
