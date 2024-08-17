@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean's Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #5c6bc0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #3949ab;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            padding: 14px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #283593;
+            transition: 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content article {
+            flex: 2;
+            margin: 20px;
+        }
+
+        .content aside {
+            flex: 1;
+            margin: 20px;
+            background-color: #e8eaf6;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .content h2 {
+            color: #3f51b5;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #5c6bc0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .code-snippet {
+            background-color: #f5f5f5;
+            border-left: 4px solid #3f51b5;
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jean's Notes</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <article>
+                <h2>Introduction to HTML & CSS</h2>
+                <p>In this tutorial, you'll learn the basics of HTML and CSS. These are the building blocks of any website and are essential skills for web development.</p>
+
+                <img src="https://via.placeholder.com/800x400" alt="Sample Tutorial Image">
+
+                <h2>HTML Basics</h2>
+                <p>HTML stands for HyperText Markup Language. It is used to structure content on the web.</p>
+
+                <div class="code-snippet">
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </div>
+
+                <p>In the example above, the <code>&lt;html&gt;</code> tag is the root of the document, <code>&lt;head&gt;</code> contains meta-information, and <code>&lt;body&gt;</code> contains the visible content.</p>
+
+                <h2>CSS Basics</h2>
+                <p>CSS stands for Cascading Style Sheets. It is used to style the HTML content, making it visually appealing.</p>
+
+                <img src="https://via.placeholder.com/800x400" alt="CSS Example">
+
+                <div class="code-snippet">
+                    <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+                    </code></pre>
+                </div>
+
+                <p>The above CSS styles the body element, setting the font, background color, and text color.</p>
+            </article>
+
+            <aside>
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">HTML Basics</a></li>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">JavaScript Basics</a></li>
+                    <li><a href="#">Conclusion</a></li>
+                </ul>
+
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="#">W3Schools HTML Tutorial</a></li>
+                    <li><a href="#">MDN Web Docs</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jean Mugisha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
