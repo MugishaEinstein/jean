@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function checkPassword() {
+            const password = prompt("Please enter the password to access the portfolio:");
+
+            if (password === "a123") {  // Replace "yourPassword123" with your actual password
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Access denied.");
+                document.body.innerHTML = "<h2>Access Denied</h2>";
+            }
+        }
+    </script>
+</head>
+
+<body onload="checkPassword()">
+
+    <div id="content" style="display: none;">
+        <header>
+            <h1>Jean Mugisha's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>SEO Data Analyst | Web Developer | Data Enthusiast</p>
+        </div>
+
+        <div class="container">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>I'm Jean Mugisha, an SEO Data Analyst at True North Digital Marketing with a passion for optimizing website performance through data-driven strategies. With expertise in Python, Google Analytics, and technical SEO, I specialize in enhancing search engine visibility and user engagement. My academic background in software engineering and certifications in Cybersecurity, Python, and Digital Marketing drive my ability to deliver impactful results.</p>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>SEO Data Analyst | True North Digital Marketing</h3>
+                    <p><strong>June 2023 - Present | Oregon, United States</strong></p>
+                    <ul>
+                        <li>Optimized search engine performance using data-driven strategies.</li>
+                        <li>Conducted technical SEO audits and link-building campaigns.</li>
+                        <li>Utilized Data Studio and Search Console for reporting and resolving indexing issues.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Search Engine Optimization and Data Analytics | Center for Online Evangelism</h3>
+                    <p><strong>January 2021 - Present</strong></p>
+                    <ul>
+                        <li>Analyzed data across multiple web pages using Data Studio and Google Analytics.</li>
+                        <li>Conducted page audits and identified trends in data sets.</li>
+                        <li>Executed link-building strategies and fixed indexing problems using Search Console.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                        <h3>Website Optimization Project</h3>
+                        <p>Enhanced website visibility and user engagement through strategic SEO and data analysis. Technologies used: Python, Google Analytics, Data Studio.</p>
+                    </div>
+                    <div class="project">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                        <h3>Technical SEO Audit</h3>
+                        <p>Conducted comprehensive audits to identify and resolve technical issues affecting website performance. Technologies used: Python, Search Console.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <p>If you'd like to connect, feel free to reach out via email at <a href="mailto:jmugisha789@gmail.com">jmugisha789@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/mugisha-jean">LinkedIn</a>.</p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Jean Mugisha. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
